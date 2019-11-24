@@ -1,24 +1,37 @@
 <h1>Eat Da Burger</h1>
 
-<h2>Burgers that have been eaten</h2>
+<h2>Not Eaten Yet</h2>
 
-{{!-- <ul>
+<ul>
     {{#each burgers}}
     {{#unless devoured}}
-    {{{> burgers/burger-block eaten=true}}
- {{/unless}}
+
+    {{this.burger_name}}
+    {{> burgers/burger-block eaten=true}}
+
+    <hr>
+    {{/unless}}
     {{/each}}
-</ul> --}}
 
-<h2>Burgers yet to be eaten</h2>
 
-{{!-- <ul>
+</ul>
+
+
+
+<h2>Eaten</h2>
+
+<ul>
     {{#each burgers}}
     {{#if devoured}}
-    {{{> burgers/burger-block eaten=false}}
+
+    {{this.burger_name}}
+    {{> burgers/burger-block eaten=false}}
+
     {{/if}}
     {{/each}}
-</ul> --}}
+</ul>
+
+
 
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -28,5 +41,5 @@
         <input type="text" id="ca" name="name">
     </div>
 
-    <button type="submit">Add Burger</button>
+    <button type="submit" class="submit-btn">Add Burger</button>
 </form>
