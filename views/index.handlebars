@@ -2,23 +2,23 @@
 
 <h2>Burgers that have been eaten</h2>
 
-<ul>
-    {{#each cats}}
-    {{#unless sleepy}}
-    {{> cats/cat-block sleep=true}}
-    {{/unless}}
+{{!-- <ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{{> burgers/burger-block eaten=true}}
+ {{/unless}}
     {{/each}}
-</ul>
+</ul> --}}
 
 <h2>Burgers yet to be eaten</h2>
 
-<ul>
-    {{#each cats}}
-    {{#if sleepy}}
-    {{> cats/cat-block sleep=false}}
+{{!-- <ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    {{{> burgers/burger-block eaten=false}}
     {{/if}}
     {{/each}}
-</ul>
+</ul> --}}
 
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -28,11 +28,5 @@
         <input type="text" id="ca" name="name">
     </div>
 
-    <div class="form-group">
-        <label for="slee">Sleepy?</label><br>
-        <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-        <input type="radio" name="sleepy" value="0"> Awake
-    </div>
-
-    <button type="submit">Add Burgers</button>
+    <button type="submit">Add Burger</button>
 </form>
