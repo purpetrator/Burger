@@ -1,15 +1,17 @@
-<h1 class="mb-5">Eat Da Burger</h1>
+<img src="/assets/img/burger.png" width="300px">
+
+{{!-- <h1 class="mb-5">Eat Da Burger</h1> --}}
 
 
 
 <div class="container rounded col-6 mx-auto bg-light p-2">
-    <h3 class="p-2">Add a Burger</h3>
+    <h3 class="p-2 mb-2">Add a Burger</h3>
     <form class="create-form">
 
         <div class="form-group">
-            <label for="ca">Burger Name:</label>
+            <label for="ca"></label>
             <input type="text" id="ca" name="name">
-            <button type="submit" class="submit-btn">Add Burger</button>
+            <button type="submit" class="submit-btn">ADD BURGER</button>
         </div>
 
 
@@ -18,10 +20,10 @@
 
 <br>
 
-<div class="container bg-light">
+<div class="container bg-light" id="eaten-cols">
     <div class="row p-2">
         <div class="col-6 p-2">
-            <h2 class="m-3">Not Eaten Yet</h2>
+            <h3 class="m-3">Not Eaten Yet</h3>
 
             <ul class="p-0">
                 {{#each burgers}}
@@ -38,7 +40,7 @@
             </ul>
         </div>
         <div class="col-6 p-2">
-            <h2 class="m-3">Eaten</h2>
+            <h3 class="m-3">Eaten</h3>
 
             <ul class="p-0">
                 {{#each burgers}}

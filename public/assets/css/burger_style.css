@@ -1,0 +1,46 @@
+.jumbotron {
+  background-color: #faf7c2;
+}
+
+#eaten-cols {
+  font-size: 24px;
+  font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+  font-family: "Bungee", cursive;
+}
+
+#ca {
+  border: 0.1em solid #ef6f6c;
+  border-radius: 0.16em;
+  margin: 10px;
+  padding: 4px 8px;
+  background-color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+}
+
+button {
+  background-color: #ef6f6c;
+  border-radius: 6px;
+
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  padding: 4px 11px;
+  text-decoration: none;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #ef9a99;
+}
+
+@media all and (max-width: 30em) {
+   button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
