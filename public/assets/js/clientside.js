@@ -31,7 +31,7 @@ $(function() {
         .trim(),
       devoured: 0
     };
-
+    console.log("newburger: " + newBurger);
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
