@@ -16,8 +16,6 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-  console.log("hit post route");
-  console.log(req.body);
   burger.insertOne(["burger_name"], [req.body.name], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
@@ -41,7 +39,6 @@ router.put("/api/burgers/:id", function(req, res) {
 
 router.delete("/api/burgers/:id", function(req, res) {
   var burgerID = "id = " + req.params.id;
-  console.log("burgerID is " + burgerID);
 
   burger.deleteOne(burgerID, function(result) {
     if (result.affectedRows == 0) {
